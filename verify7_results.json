@@ -1,0 +1,74 @@
+{
+ "hessian_fd": {
+  "passed": true,
+  "detail": "asym 2e-16; |c^T M c| 1.3e-17; max |FD - M| over 30 entries 1.8e-07"
+ },
+ "gradient_fd": {
+  "passed": true,
+  "detail": "max deviation over 40 components 6.4e-10"
+ },
+ "kp_distribution": {
+  "passed": true,
+  "detail": "<a0> vs I2/I1 at alpha=0.2..12: worst deviation 2.8 sigma"
+ },
+ "single_link_haar": {
+  "passed": true,
+  "detail": "heat bath [1.3287 0.9751] vs importance-sampled Haar [1.3262 0.9739] (sigma [0.0026 0.0022])"
+ },
+ "heatbath_vs_metropolis_2x4_b3": {
+  "passed": true,
+  "detail": "heat bath 0.2065+-0.0001; Metropolis 0.2075+-0.0020; paper (2^4, beta=3) 0.2066+-0.0003"
+ },
+ "thermalization_and_published_plaquette_4x4": {
+  "passed": true,
+  "detail": "beta=3: hot 0.2050+-0.0001, cold 0.2050+-0.0002, paper 0.2052; beta=5: hot 0.4005+-0.0002, cold 0.4004+-0.0001, paper 0.4004; beta=6: hot 0.5967+-0.0002, cold 0.5967+-0.0002, paper 0.5967"
+ },
+ "landau_fixing_4x4": {
+  "passed": true,
+  "detail": "|grad F|_max 2.7e-12; lowest reduced eigenvalue 0.27315; max|M c| 8.3e-14; n_or 80"
+ },
+ "gauge_invariance": {
+  "passed": true,
+  "detail": "plaquette diff 1e-16; Delta spectrum diff 1.1e-13; range [0.854,7.146] subset [0,8]"
+ },
+ "wilson_flow": {
+  "passed": true,
+  "detail": "S monotone: True; observed order 3.40, 3.22; gauge covariance 3.5e-15; unitarity 8.9e-16"
+ },
+ "cold_lattice_spectra": {
+  "passed": true,
+  "detail": "M and Delta vs sum(1-cos p), L=2: 1.1e-14, L=4: 5.2e-14; L=4 multiplicities [64, 224, 448, 560, 448, 224, 64, 8]"
+ },
+ "lambda1_sparse_vs_dense": {
+  "passed": true,
+  "detail": "max |lanczos - dense| over 3 configs 1.0e-14"
+ },
+ "chebyshev_and_T0_limit": {
+  "passed": true,
+  "detail": "Chebyshev vs exact 6.1e-16 with 19 terms; |H_tau - Delta0| = 2.4e-04 (T=1e-4), 2.4e-06 (T=1e-6): linear in T"
+ },
+ "kpm_counting_vs_exact_4x4": {
+  "passed": true,
+  "detail": "max error 0.28% of the dimension (40 probes, 160 moments)"
+ },
+ "kpm_cold_lattice_staircase": {
+  "passed": false,
+  "detail": "KPM vs exact cold counting function (L=4,6,8; staircase is hard for a smooth kernel), max error L=4: 13.27%, L=6: 7.70%, L=8: 5.47%"
+ },
+ "proposition12_tautology": {
+  "passed": true,
+  "detail": "ratio 1.00000"
+ },
+ "proposition10_bounds": {
+  "passed": true,
+  "detail": "f1 <= lambda1||X|| <= 1 in 12 cases (3 couplings x 2 configs x 2 cutoffs); ratio lambda1||X||/f1 in [1.0000,1.0358]"
+ },
+ "halmos_two_projections": {
+  "passed": true,
+  "detail": "dim P_c=2030, dim p=1028, unit singular values=1010, ||[P,p]||=0.061 <= 1/2"
+ },
+ "conjecture1_estimator_vs_exact_4x4": {
+  "passed": true,
+  "detail": "Lam=2.0: Tr X/dim p exact 1.2813, estimate 1.2050+-0.0308; f1 exact 0.9679, filtered 0.9656; Lam=4.0: Tr X/dim p exact 0.5593, estimate 0.5439+-0.0055; f1 exact 0.9981, filtered 0.9979"
+ }
+}
